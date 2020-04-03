@@ -1,0 +1,62 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>订单支付</title>
+    <link href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+</head>
+<body style="padding:20px;">
+<div style="text-align:center">
+    <p>支付金额：￥<span th:text="${price}"></span>元</p>
+    <br/>
+    <p><a href="javascript:;" class="weui-btn weui-btn_primary" id="payBtn">微信支付</a></p>
+</div>
+<input type="hidden" id="appId" th:value='${appId}'/>
+<input type="hidden" id="timeStamp" th:value='${timeStamp}'/>
+<input type="hidden" id="nonceStr" th:value='${nonceStr}'/>
+<input type="hidden" id="package" th:value='${package}'/>
+<input type="hidden" id="signType" th:value='${signType}'/>
+<input type="hidden" id="paySign" th:value='${paySign}'/>
+</body>
+<script>
+    if (typeof WeixinJSBridge == "undefined") {
+        if (document.addEventListener) {
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        } else if (document.attachEvent) {
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }
+    }
+    function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    }
+    $('#payBtn').on('click', function () {
+        var appId = $("#appId").val();
+        var timeStamp = $("#timeStamp").val();
+        var nonceStr = $("#nonceStr").val();
+        var package = $("#package").val();
+        var signType = $("#signType").val();
+        var paySign = $("#paySign").val();
+        WeixinJSBridge.invoke(
+                'getBrandWCPayRequest', {
+                    "appId": appId,
+                    "timeStamp": timeStamp,
+                    "nonceStr": nonceStr,
+                    "package": package,
+                    "signType": signType,
+                    "paySign": paySign
+                },
+                function (res) {
+                    if (res.err_msg == "get_brand_wcpay_request:ok") {
+                        WeixinJSBridge.call('closeWindow');
+                    }
+                }
+        );
+    });
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>订单支付</title>
+</head>
+<body>
+<div style="width:100%;text-align: center">
+    <p>支付金额：￥<span th:text="${price}"></span>元</p>
+    <br/>
+    <img th:src="${qrcode}"/>
+    <br/>
+    <span>
+        <span th:text="${msg}"></span>
+    </span>
+    <input type="hidden" id="order_no" th:value='${order_no}'/>
+
+</div>
+</body>
+<!--<script>-->
+<!--api/payment/orderStatus/{order_no}-->
+<!--setInterval(function () {-->
+<!--console.log('interval')-->
+<!--}, 1000);-->
+<!--</script>-->
+</html>
