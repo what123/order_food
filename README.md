@@ -17,7 +17,7 @@ springboot + jpa + mysql
 
 #### 使用说明
 
-启动程序后打开首页，参考里面的说明文档
+https://shimo.im/docs/XKKwCjWpwcrjQqPr/read
 
 #### 参与贡献
 
