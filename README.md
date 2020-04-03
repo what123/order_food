@@ -17,9 +17,9 @@ springboot + jpa + mysql
 
 #### 使用说明
 
-https://shimo.im/docs/XKKwCjWpwcrjQqPr/read
+操作文档：https://shimo.im/docs/XKKwCjWpwcrjQqPr/read
 
-演示：https:www.fangwei6.com
+演示：https://www.fangwei6.com
 
 #### 参与贡献
 
