@@ -4,20 +4,20 @@
 一套用户餐厅点餐的系统，用户扫码点餐，自动打单
 
 #### 软件架构
-软件架构说明
+springboot + jpa + mysql
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  clone代码下来
+2.  使用maven更新依赖包
+3.  在数据库中创建好数据库（不用建表）
+4.  修改源码中的application-dev.properties文件里的数据库配置信息
+5.  启动程序（SpringbootApplication）
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+启动程序后打开首页，参考里面的说明文档
 
 #### 参与贡献
 
