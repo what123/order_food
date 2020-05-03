@@ -21,7 +21,7 @@ springboot + jpa + mysql
 
 演示：http://www.fangwei6.com
 
-联系电话：13710124580
+联系电话和微信：13710124580
 
 #### 参与贡献
 
