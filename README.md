@@ -23,19 +23,8 @@ springboot + jpa + mysql
 
 联系电话和微信：13710124580
 
-#### 参与贡献
+#### 相关文档
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.功能结构：https://www.processon.com/view/link/5ed19a3d7d9c08070283529d
+2.操作说明文档：https://shimo.im/docs/XKKwCjWpwcrjQqPr/read
+3.技术架构图：https://www.processon.com/view/link/5ed19bc663768906e2cdc056
