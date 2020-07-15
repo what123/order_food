@@ -19,7 +19,7 @@ springboot + jpa + mysql
 
 操作文档：https://shimo.im/docs/XKKwCjWpwcrjQqPr/read
 
-演示：http://www.fangwei6.com
+演示：http://qc.fangwei6.com
 
 联系电话和微信：13710124580
 
