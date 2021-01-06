@@ -61,17 +61,21 @@ springboot + jpa + mysql
    要购买或开通帐号请联系电话或微信：13710124580
    
    测试帐号
+   
    总店后台：http://qc.fangwei6.com/admin/index.html?#/mainStore/login
-   testAdmin2  888888
+   
+   帐号密码: testAdmin2  888888
    
    分店后台：http://qc.fangwei6.com/admin/index.html?#/store/login
-   sysAdmin2 888888
+   
+   帐号密码: sysAdmin2 888888
    
    员工端：
    android端:  http://static.fangwei6.com/orderFoodStaff.apk
    h5端：http://qc.fangwei6.com/staff/index.html
    
    服务员帐号：systest1   888888
+   
    厨师帐号： systest2  888888
    
    用户h5端：在分店后台，店内管理->餐桌管理->二维码展示->微信扫码
